@@ -20,7 +20,7 @@ export default function Index() {
             <img 
               src={triadelogo} 
               alt="Triade Systems logo" 
-              className="h-20 w-20 rounded-md transition-transform group-hover:scale-110" 
+              className="h-28 w-28 transition-transform group-hover:scale-110" 
             />
             <span className="font-bold tracking-wider text-white text-lg">TRIADE SYSTEMS</span>
           </a>
@@ -77,9 +77,9 @@ export default function Index() {
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold text-white mb-4 text-center">Our Core Services</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full"></div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
-              title="IT Consulting" 
+              title="IT Consulting & Modernization" 
               desc="Strategic technology advisory and solution architecture designed to modernize infrastructure, optimize operations, and accelerate growth across cloud and on-premise environments." 
               points={[
                 "Comprehensive technology assessments and multi-year roadmaps",
@@ -89,7 +89,7 @@ export default function Index() {
               ]} 
             />
             <ServiceCard 
-              title="Cybersecurity Compliance" 
+              title="Cybersecurity & GRC" 
               desc="End-to-end compliance readiness and audit support for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP, with continuous monitoring and governance frameworks." 
               points={[
                 "Comprehensive gap assessments and remediation planning",
@@ -99,13 +99,23 @@ export default function Index() {
               ]} 
             />
             <ServiceCard 
-              title="AI Automation" 
-              desc="Intelligent automation solutions powered by AI agents, machine learning, and robotic process automation to transform workflows and enhance operational efficiency." 
+              title="Artificial Intelligence" 
+              desc="AI automation, custom model development & training, and agentic AI systems that transform workflows and enhance operational efficiency." 
               points={[
                 "AI-powered workflow automation and intelligent document processing",
-                "Custom chatbot and virtual assistant development",
-                "Data pipeline engineering and analytics integration",
+                "Custom model development, training, and fine-tuning",
+                "Agentic AI systems for autonomous decision-making",
                 "GenAI integration for customer support and knowledge management"
+              ]} 
+            />
+            <ServiceCard 
+              title="Managed IT Services" 
+              desc="Comprehensive managed IT services providing 24/7 monitoring, support, and proactive maintenance to keep your infrastructure secure and optimized." 
+              points={[
+                "24/7 network monitoring and infrastructure management",
+                "Help desk support and incident response",
+                "Proactive maintenance and performance optimization",
+                "Backup, disaster recovery, and business continuity planning"
               ]} 
             />
           </div>
@@ -289,12 +299,12 @@ export default function Index() {
             <div>
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-3 text-slate-400 text-sm">
-                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity Compliance</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">AI Automation</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting & Modernization</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity & GRC</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Artificial Intelligence</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Cloud Architecture</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Network Modernization</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
               </ul>
             </div>
 
