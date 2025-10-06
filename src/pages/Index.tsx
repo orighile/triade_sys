@@ -20,7 +20,7 @@ export default function Index() {
             <img 
               src={triadelogo} 
               alt="Triade Systems logo" 
-              className="h-10 w-10 rounded-md transition-transform group-hover:scale-110" 
+              className="h-20 w-20 rounded-md transition-transform group-hover:scale-110" 
             />
             <span className="font-bold tracking-wider text-white text-lg">TRIADE SYSTEMS</span>
           </a>
@@ -51,7 +51,7 @@ export default function Index() {
           </span>
         </h1>
         <p className="max-w-3xl mx-auto text-slate-300 text-lg mb-10 leading-relaxed">
-          We help organizations modernize, secure, and automate operations with predictable delivery and compliance excellence.
+          Unlock enterprise value with customized IT solutions that align technology with business outcomes. Whether you're modernizing core systems, strengthening cybersecurity posture, or launching intelligent automation platforms, we guide your transformation journey every step of the way with predictable delivery and compliance excellence.
         </p>
         <Button variant="hero" size="lg" asChild>
           <a href="#quote">Start Your Project</a>
@@ -63,8 +63,11 @@ export default function Index() {
         <div className="mx-auto max-w-6xl px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">About Triade Systems</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-8 rounded-full"></div>
+          <p className="text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto mb-8">
+            Triade Systems is a trusted IT consulting partner for enterprises, delivering tailored technology solutions that accelerate digital transformation and business growth. With a nationwide network of over 35 certified technicians and deep expertise in infrastructure modernization, cybersecurity compliance, and intelligent automation, we help organizations build secure, scalable, and high-impact digital systems.
+          </p>
           <p className="text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto">
-            Triade Systems provides end-to-end IT consulting, cybersecurity compliance, and AI automation solutions across public and private sectors. With a nationwide network of over 35 technicians, we deliver architecture modernization, SOC 2 and ISO readiness, and AI workflow integrations.
+            From strategy to implementation, we cover the full technology spectrum—delivering architecture modernization, SOC 2 and ISO 27001 readiness, FedRAMP compliance support, and AI workflow integrations. Our integrated approach eliminates silos, accelerates results, and ensures seamless alignment across your digital ecosystem.
           </p>
         </div>
       </section>
@@ -77,29 +80,32 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard 
               title="IT Consulting" 
-              desc="Strategy, roadmaps, and solution architecture for modernization and growth." 
+              desc="Strategic technology advisory and solution architecture designed to modernize infrastructure, optimize operations, and accelerate growth across cloud and on-premise environments." 
               points={[
-                "Technology assessments and roadmaps",
-                "Cloud/On‑prem architecture & migrations",
-                "Network design, site turn‑ups, branch transformations"
+                "Comprehensive technology assessments and multi-year roadmaps",
+                "Cloud-native architecture design and hybrid cloud migrations",
+                "Network infrastructure modernization, SD-WAN deployment, and branch office transformations",
+                "Application modernization and legacy system upgrades"
               ]} 
             />
             <ServiceCard 
               title="Cybersecurity Compliance" 
-              desc="SOC 2, ISO 27001, HIPAA, PCI DSS, FedRAMP readiness & audits." 
+              desc="End-to-end compliance readiness and audit support for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP, with continuous monitoring and governance frameworks." 
               points={[
-                "Gap assessments and audit support",
-                "Control design and remediation plans",
-                "Continuous compliance dashboards"
+                "Comprehensive gap assessments and remediation planning",
+                "Control design, documentation, and evidence collection",
+                "Continuous compliance monitoring and real-time dashboards",
+                "Risk management frameworks and security posture optimization"
               ]} 
             />
             <ServiceCard 
               title="AI Automation" 
-              desc="Agents, chatbots, RPA, and integrations." 
+              desc="Intelligent automation solutions powered by AI agents, machine learning, and robotic process automation to transform workflows and enhance operational efficiency." 
               points={[
-                "Workflow automation",
-                "Data pipelines",
-                "Custom chatbot development"
+                "AI-powered workflow automation and intelligent document processing",
+                "Custom chatbot and virtual assistant development",
+                "Data pipeline engineering and analytics integration",
+                "GenAI integration for customer support and knowledge management"
               ]} 
             />
           </div>
@@ -112,7 +118,7 @@ export default function Index() {
           <h2 className="text-4xl font-bold text-white mb-6">Clients & Contracts</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-8 rounded-full"></div>
           <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
-            Our team has supported contract vehicles across state, local, and federal agencies, ensuring SLA-backed performance, documentation-first delivery, and secure-by-design integrations.
+            Our team has successfully supported contract vehicles across state, local, and federal agencies nationwide. We deliver mission-critical technology solutions with SLA-backed performance, documentation-first execution, and secure-by-design integrations. From planning to production, our governance frameworks ensure alignment, traceability, and zero disruption to your operations.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-8 rounded-2xl hover:scale-105 transition-transform">
@@ -246,13 +252,99 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-[var(--glass-border)] py-8 text-center text-slate-400 bg-[var(--glass-bg)] backdrop-blur-md">
-        <img 
-          src={triadelogo} 
-          alt="Triade Footer Logo" 
-          className="h-10 w-10 mx-auto mb-4 opacity-80" 
-        />
-        <p className="text-sm">© {new Date().getFullYear()} Triade Systems. All rights reserved.</p>
+      <footer className="border-t border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-md">
+        <div className="mx-auto max-w-7xl px-6 py-16">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
+            {/* Company Info */}
+            <div className="md:col-span-1">
+              <img 
+                src={triadelogo} 
+                alt="Triade Systems" 
+                className="h-16 w-16 mb-4 rounded-md" 
+              />
+              <h3 className="text-white font-bold text-lg mb-3">TRIADE SYSTEMS</h3>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                Trusted IT consulting partner delivering secure, scalable, and innovative technology solutions for enterprises.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors" aria-label="LinkedIn">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors" aria-label="Twitter">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                  </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors" aria-label="Facebook">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Services</h4>
+              <ul className="space-y-3 text-slate-400 text-sm">
+                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity Compliance</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">AI Automation</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Cloud Architecture</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Network Modernization</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
+              </ul>
+            </div>
+
+            {/* Company */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Company</h4>
+              <ul className="space-y-3 text-slate-400 text-sm">
+                <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
+                <li><a href="#clients" className="hover:text-accent transition-colors">Our Clients</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Case Studies</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
+                <li><a href="#" className="hover:text-accent transition-colors">Blog & Insights</a></li>
+                <li><a href="#contact" className="hover:text-accent transition-colors">Contact Us</a></li>
+              </ul>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h4 className="text-white font-semibold mb-4">Get In Touch</h4>
+              <ul className="space-y-3 text-slate-400 text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-accent mt-0.5">📍</span>
+                  <span>5900 Balcones Drive STE 100<br />Austin, TX 78731, USA</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-accent">📞</span>
+                  <a href="tel:737-259-8686" className="hover:text-accent transition-colors">737-259-8686</a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-accent">✉️</span>
+                  <a href="mailto:sales@triadesys.com" className="hover:text-accent transition-colors">sales@triadesys.com</a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="text-accent">💬</span>
+                  <a href="mailto:support@triadesys.com" className="hover:text-accent transition-colors">support@triadesys.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-[var(--glass-border)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-slate-400 text-sm">© {new Date().getFullYear()} Triade Systems. All rights reserved.</p>
+            <div className="flex gap-6 text-slate-400 text-sm">
+              <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-accent transition-colors">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );
