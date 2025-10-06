@@ -27,7 +27,7 @@ export default function Index() {
           <nav className="hidden md:flex gap-8 items-center">
             <a href="#about" className="text-slate-200 hover:text-accent transition-colors font-medium">About</a>
             <a href="#services" className="text-slate-200 hover:text-accent transition-colors font-medium">Services</a>
-            <a href="#clients" className="text-slate-200 hover:text-accent transition-colors font-medium">Clients</a>
+            <a href="#clients" className="text-slate-200 hover:text-accent transition-colors font-medium">Contract Vehicles</a>
             
             <Button variant="hero" asChild>
               <a href="#quote">Get a Quote</a>
