@@ -64,7 +64,7 @@ export default function Index() {
           <h2 className="text-4xl font-bold text-white mb-6">About Triade Systems</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-8 rounded-full"></div>
           <p className="text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto mb-8">
-            Triade Systems is a trusted IT consulting partner for enterprises, delivering tailored technology solutions that accelerate digital transformation and business growth. With a nationwide network of over 35 certified technicians and deep expertise in infrastructure modernization, cybersecurity compliance, and intelligent automation, we help organizations build secure, scalable, and high-impact digital systems.
+            Triade Systems is a trusted IT consulting partner for enterprises, delivering tailored technology solutions that accelerate digital transformation and business growth. With deep expertise in infrastructure modernization, cybersecurity compliance, and intelligent automation, we help organizations build secure, scalable, and high-impact digital systems.
           </p>
           <p className="text-slate-300 text-lg leading-relaxed max-w-4xl mx-auto">
             From strategy to implementation, we cover the full technology spectrum—delivering architecture modernization, SOC 2 and ISO 27001 readiness, FedRAMP compliance support, and AI workflow integrations. Our integrated approach eliminates silos, accelerates results, and ensures seamless alignment across your digital ecosystem.
@@ -77,45 +77,35 @@ export default function Index() {
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold text-white mb-4 text-center">Our Core Services</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full"></div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <ServiceCard 
-              title="IT Consulting & Modernization" 
+              title="IT Consulting" 
               desc="Strategic technology advisory and solution architecture designed to modernize infrastructure, optimize operations, and accelerate growth across cloud and on-premise environments." 
               points={[
-                "Technology assessments and transformation roadmaps",
-                "Cloud-native architecture and hybrid migrations",
-                "Network modernization and SD-WAN deployment",
-                "Legacy system upgrades and application modernization"
+                "Comprehensive technology assessments and multi-year roadmaps",
+                "Cloud-native architecture design and hybrid cloud migrations",
+                "Network infrastructure modernization, SD-WAN deployment, and branch office transformations",
+                "Application modernization and legacy system upgrades"
               ]} 
             />
             <ServiceCard 
-              title="Cybersecurity & GRC" 
-              desc="Comprehensive governance, risk, and compliance solutions with end-to-end security frameworks for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP readiness." 
+              title="Cybersecurity Compliance" 
+              desc="End-to-end compliance readiness and audit support for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP, with continuous monitoring and governance frameworks." 
               points={[
-                "Gap assessments and remediation planning",
-                "Control design and evidence collection",
-                "Continuous compliance monitoring dashboards",
-                "Risk management and security posture optimization"
+                "Comprehensive gap assessments and remediation planning",
+                "Control design, documentation, and evidence collection",
+                "Continuous compliance monitoring and real-time dashboards",
+                "Risk management frameworks and security posture optimization"
               ]} 
             />
             <ServiceCard 
-              title="Artificial Intelligence" 
-              desc="Advanced AI solutions including intelligent automation, custom model development and training, and agentic AI systems that transform business operations." 
+              title="AI Automation" 
+              desc="Intelligent automation solutions powered by AI agents, machine learning, and robotic process automation to transform workflows and enhance operational efficiency." 
               points={[
-                "AI-powered workflow automation and RPA",
-                "Custom model development and training",
-                "Agentic AI system design and implementation",
-                "Data pipeline engineering and ML operations"
-              ]} 
-            />
-            <ServiceCard 
-              title="Managed IT Services" 
-              desc="Comprehensive managed IT solutions with 24/7 monitoring, proactive support, and strategic technology management to keep your operations running smoothly." 
-              points={[
-                "24/7 infrastructure monitoring and support",
-                "Proactive maintenance and patch management",
-                "Help desk and end-user support services",
-                "IT asset management and vendor coordination"
+                "AI-powered workflow automation and intelligent document processing",
+                "Custom chatbot and virtual assistant development",
+                "Data pipeline engineering and analytics integration",
+                "GenAI integration for customer support and knowledge management"
               ]} 
             />
           </div>
@@ -209,11 +199,11 @@ export default function Index() {
       <section id="contact" className="py-24 bg-gradient-to-b from-transparent to-[var(--glass-bg)] px-6">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-10">
           <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl">
-            <h3 className="text-2xl font-bold text-white mb-6">Triade Headquarters</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Triade Systems</h3>
             <div className="space-y-4 text-slate-300 text-lg">
               <p className="flex items-start gap-3">
                 <span className="text-accent">📍</span>
-                <span>5900 Balcones Drive STE 100<br />Austin, TX 78731, USA</span>
+                <span>5900 Balcones Drive Ste 100<br />Austin, TX 78731, USA</span>
               </p>
               <p className="flex items-center gap-3">
                 <span className="text-accent">📞</span>
@@ -299,12 +289,12 @@ export default function Index() {
             <div>
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-3 text-slate-400 text-sm">
-                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting & Modernization</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity & GRC</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Artificial Intelligence</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity Compliance</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">AI Automation</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Cloud Architecture</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Network Modernization</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
               </ul>
             </div>
 
@@ -327,7 +317,7 @@ export default function Index() {
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-accent mt-0.5">📍</span>
-                  <span>5900 Balcones Drive STE 100<br />Austin, TX 78731, USA</span>
+                  <span>5900 Balcones Drive Ste 100<br />Austin, TX 78731, USA</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-accent">📞</span>
