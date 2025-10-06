@@ -114,22 +114,63 @@ export default function Index() {
 
       {/* Clients & Contracts */}
       <section id="clients" className="py-24 bg-gradient-to-b from-[var(--glass-bg)] to-transparent px-6">
-        <div className="mx-auto max-w-6xl text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Contracts Vehicles</h2>
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-4xl font-bold text-white mb-6 text-center">Contract Vehicles</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-8 rounded-full"></div>
-          <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-12 leading-relaxed">
-            Our team has successfully supported contract vehicles across state, local, and federal agencies nationwide. We deliver mission-critical technology solutions with SLA-backed performance, documentation-first execution, and secure-by-design integrations. From planning to production, our governance frameworks ensure alignment, traceability, and zero disruption to your operations.
+          <p className="text-slate-300 text-lg max-w-3xl mx-auto mb-12 leading-relaxed text-center">
+            Our team has successfully supported contract vehicles across state, local, and federal agencies nationwide. We deliver mission-critical technology solutions with SLA-backed performance, documentation-first execution, and secure-by-design integrations.
           </p>
+          
+          {/* Contract Vehicles List */}
+          <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-8 md:p-10 rounded-2xl mb-12">
+            <h3 className="text-2xl font-bold text-white mb-6">Active Contract Vehicles</h3>
+            <div className="grid gap-4">
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <a href="https://dir.texas.gov/contracts/dir-tso-4383" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 font-semibold text-lg transition-colors">
+                  DIR-TSO-4383
+                </a>
+                <p className="text-slate-300 mt-2">Software Products and Services</p>
+              </div>
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <a href="https://dir.texas.gov/contracts/dir-cpo-4458" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 font-semibold text-lg transition-colors">
+                  DIR-CPO-4458
+                </a>
+                <p className="text-slate-300 mt-2">Data Communication & Networking Equipment</p>
+              </div>
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <a href="https://dir.texas.gov/contracts/dir-cpo-4846" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 font-semibold text-lg transition-colors">
+                  DIR-CPO-4846
+                </a>
+                <p className="text-slate-300 mt-2">Cyber Security Hardware, Software, & Services</p>
+              </div>
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <a href="https://dir.texas.gov/contracts/dir-cpo-5096" target="_blank" rel="noopener noreferrer" className="text-accent hover:text-accent/80 font-semibold text-lg transition-colors">
+                  DIR-CPO-5096
+                </a>
+                <p className="text-slate-300 mt-2">IT Hardware, Peripherals & Services</p>
+              </div>
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <p className="text-accent font-semibold text-lg">OMNIA R200803</p>
+                <p className="text-slate-300 mt-2">Advanced Technology Solutions Aggregator</p>
+              </div>
+              <div className="bg-card/30 border border-border p-6 rounded-xl hover:border-accent/50 transition-colors">
+                <p className="text-accent font-semibold text-lg">MAS-GSA-Solicitation 47QSMD20R0001</p>
+                <p className="text-slate-300 mt-2">GSA Multiple Award Schedule</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Key Capabilities */}
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-8 rounded-2xl hover:scale-105 transition-transform">
               <div className="text-accent text-3xl mb-3">⚡</div>
               <h3 className="text-white font-semibold text-lg mb-2">Agile Mobilization</h3>
-              <p className="text-slate-300">Predictable delivery timelines</p>
+              <p className="text-slate-300">Predictable delivery timelines with rapid dispatch</p>
             </div>
             <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-8 rounded-2xl hover:scale-105 transition-transform">
               <div className="text-accent text-3xl mb-3">📋</div>
               <h3 className="text-white font-semibold text-lg mb-2">Documentation-First</h3>
-              <p className="text-slate-300">SLA-driven execution</p>
+              <p className="text-slate-300">SLA-driven execution with complete traceability</p>
             </div>
             <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-8 rounded-2xl hover:scale-105 transition-transform">
               <div className="text-accent text-3xl mb-3">🔒</div>
