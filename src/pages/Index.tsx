@@ -278,6 +278,7 @@ export default function Index() {
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
                 <li><a href="#clients" className="hover:text-accent transition-colors">Contract Vehicles</a></li>
+                <li><a href="mailto:sales@triadesys.com" className="hover:text-accent transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
