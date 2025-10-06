@@ -21,26 +21,26 @@ export default function TermsOfService() {
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="text-4xl font-bold text-white mb-8">Terms of Service</h1>
-        <div className="prose prose-invert max-w-none space-y-6 text-slate-300">
-          <p className="text-sm text-slate-400">Last Updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-4xl font-bold text-foreground mb-8">Terms of Service</h1>
+        <div className="prose prose-invert max-w-none space-y-6 text-foreground/90">
+          <p className="text-sm text-muted-foreground">Last Updated: {new Date().toLocaleDateString()}</p>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">1. Acceptance of Terms</h2>
+            <h2 className="text-2xl font-semibold text-foreground">1. Acceptance of Terms</h2>
             <p>
               By accessing and using Triade Systems' website and services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">2. Services</h2>
+            <h2 className="text-2xl font-semibold text-foreground">2. Services</h2>
             <p>
               Triade Systems provides IT consulting, cybersecurity, artificial intelligence solutions, and managed IT services. The specific terms of each engagement will be outlined in separate service agreements.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">3. User Responsibilities</h2>
+            <h2 className="text-2xl font-semibold text-foreground">3. User Responsibilities</h2>
             <p>You agree to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Provide accurate and complete information</li>
@@ -51,42 +51,42 @@ export default function TermsOfService() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">4. Intellectual Property</h2>
+            <h2 className="text-2xl font-semibold text-foreground">4. Intellectual Property</h2>
             <p>
               All content, trademarks, and intellectual property on our website are owned by Triade Systems or our licensors. You may not use, reproduce, or distribute our content without prior written permission.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">5. Limitation of Liability</h2>
+            <h2 className="text-2xl font-semibold text-foreground">5. Limitation of Liability</h2>
             <p>
               Triade Systems shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">6. Confidentiality</h2>
+            <h2 className="text-2xl font-semibold text-foreground">6. Confidentiality</h2>
             <p>
               Both parties agree to maintain the confidentiality of any proprietary or sensitive information disclosed during the course of our business relationship.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">7. Termination</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. Termination</h2>
             <p>
               We reserve the right to terminate or suspend access to our services immediately, without prior notice, for any breach of these Terms of Service.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">8. Governing Law</h2>
+            <h2 className="text-2xl font-semibold text-foreground">8. Governing Law</h2>
             <p>
               These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">9. Contact Information</h2>
+            <h2 className="text-2xl font-semibold text-foreground">9. Contact Information</h2>
             <p>
               For questions about these Terms of Service, please contact:
               <br />

@@ -21,19 +21,19 @@ export default function PrivacyPolicy() {
       </header>
 
       <main className="mx-auto max-w-4xl px-6 py-16">
-        <h1 className="text-4xl font-bold text-white mb-8">Privacy Policy</h1>
-        <div className="prose prose-invert max-w-none space-y-6 text-slate-300">
-          <p className="text-sm text-slate-400">Last Updated: {new Date().toLocaleDateString()}</p>
+        <h1 className="text-4xl font-bold text-foreground mb-8">Privacy Policy</h1>
+        <div className="prose prose-invert max-w-none space-y-6 text-foreground/90">
+          <p className="text-sm text-muted-foreground">Last Updated: {new Date().toLocaleDateString()}</p>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">1. Introduction</h2>
+            <h2 className="text-2xl font-semibold text-foreground">1. Introduction</h2>
             <p>
               Triade Systems ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">2. Information We Collect</h2>
+            <h2 className="text-2xl font-semibold text-foreground">2. Information We Collect</h2>
             <p>We may collect the following types of information:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Personal Information:</strong> Name, email address, phone number, company name, and other contact details you provide.</li>
@@ -43,7 +43,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">3. How We Use Your Information</h2>
+            <h2 className="text-2xl font-semibold text-foreground">3. How We Use Your Information</h2>
             <p>We use the collected information for:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Providing and maintaining our services</li>
@@ -55,21 +55,21 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">4. Information Sharing</h2>
+            <h2 className="text-2xl font-semibold text-foreground">4. Information Sharing</h2>
             <p>
               We do not sell or rent your personal information. We may share your information with trusted third-party service providers who assist us in operating our business, subject to confidentiality agreements.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">5. Data Security</h2>
+            <h2 className="text-2xl font-semibold text-foreground">5. Data Security</h2>
             <p>
               We implement appropriate technical and organizational measures to protect your information against unauthorized access, alteration, disclosure, or destruction.
             </p>
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">6. Your Rights</h2>
+            <h2 className="text-2xl font-semibold text-foreground">6. Your Rights</h2>
             <p>You have the right to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Access and receive a copy of your personal data</li>
@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-white">7. Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. Contact Us</h2>
             <p>
               If you have questions about this Privacy Policy, please contact us at:
               <br />
