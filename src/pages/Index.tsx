@@ -28,7 +28,7 @@ export default function Index() {
             <a href="#about" className="text-slate-200 hover:text-accent transition-colors font-medium">About</a>
             <a href="#services" className="text-slate-200 hover:text-accent transition-colors font-medium">Services</a>
             <a href="#clients" className="text-slate-200 hover:text-accent transition-colors font-medium">Clients</a>
-            <a href="#contact" className="text-slate-200 hover:text-accent transition-colors font-medium">Contact</a>
+            
             <Button variant="hero" asChild>
               <a href="#quote">Get a Quote</a>
             </Button>
@@ -203,8 +203,8 @@ export default function Index() {
                   placeholder="Tell us about your IT challenges or goals..." 
                 />
               </div>
-              <Button variant="hero" size="lg" className="w-full">
-                Submit Request
+              <Button variant="hero" size="lg" className="w-full" asChild>
+                <a href="mailto:sales@triadesys.com">Submit Request</a>
               </Button>
             </form>
           </div>
@@ -236,61 +236,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gradient-to-b from-transparent to-[var(--glass-bg)] px-6">
-        <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-10">
-          <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl">
-            <h3 className="text-2xl font-bold text-white mb-6">Triade Systems</h3>
-            <div className="space-y-4 text-slate-300 text-lg">
-              <p className="flex items-start gap-3">
-                <span className="text-accent">📍</span>
-                <span>5900 Balcones Drive Ste 100<br />Austin, TX 78731, USA</span>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="text-accent">📞</span>
-                <span>737-259-8686</span>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="text-accent">✉️</span>
-                <span>sales@triadesys.com</span>
-              </p>
-              <p className="flex items-center gap-3">
-                <span className="text-accent">💬</span>
-                <span>support@triadesys.com</span>
-              </p>
-            </div>
-            <Button variant="hero" size="lg" className="mt-8">
-              Contact Us
-            </Button>
-          </div>
-
-          <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl">
-            <h2 className="text-2xl font-bold mb-6 text-white">Submit Your Inquiry</h2>
-            <form className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Field label="First Name" required />
-                <Field label="Last Name" required />
-                <Field label="Work Email" type="email" required />
-                <Field label="Phone Number" type="tel" required />
-                <div className="sm:col-span-2">
-                  <Field label="Company Name" required />
-                </div>
-              </div>
-              <div>
-                <Label className="text-sm text-slate-200">Message</Label>
-                <Textarea 
-                  rows={4} 
-                  className="mt-2 bg-card/30 border-border text-white placeholder:text-slate-400 rounded-xl" 
-                  placeholder="Enter details about your inquiry..." 
-                />
-              </div>
-              <Button variant="hero" size="lg" className="w-full">
-                Submit Inquiry
-              </Button>
-            </form>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="border-t border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-md">
@@ -313,16 +258,6 @@ export default function Index() {
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors" aria-label="Twitter">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
-                  </svg>
-                </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors" aria-label="Facebook">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                  </svg>
-                </a>
               </div>
             </div>
 
@@ -343,8 +278,6 @@ export default function Index() {
               <ul className="space-y-3 text-slate-400 text-sm">
                 <li><a href="#about" className="hover:text-accent transition-colors">About Us</a></li>
                 <li><a href="#clients" className="hover:text-accent transition-colors">Contract Vehicles</a></li>
-                          
-             <li><a href="#contact" className="hover:text-accent transition-colors">Contact Us</a></li>
               </ul>
             </div>
 
@@ -376,9 +309,9 @@ export default function Index() {
           <div className="border-t border-[var(--glass-border)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">© {new Date().getFullYear()} Triade Systems. All rights reserved.</p>
             <div className="flex gap-6 text-slate-400 text-sm">
-              <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-accent transition-colors">Cookie Policy</a>
+              <a href="/privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</a>
+              <a href="/terms-of-service" className="hover:text-accent transition-colors">Terms of Service</a>
+              <a href="/cookie-policy" className="hover:text-accent transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>
