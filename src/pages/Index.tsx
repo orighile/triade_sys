@@ -77,35 +77,45 @@ export default function Index() {
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold text-white mb-4 text-center">Our Core Services</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full"></div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
-              title="IT Consulting" 
+              title="IT Consulting & Modernization" 
               desc="Strategic technology advisory and solution architecture designed to modernize infrastructure, optimize operations, and accelerate growth across cloud and on-premise environments." 
               points={[
-                "Comprehensive technology assessments and multi-year roadmaps",
-                "Cloud-native architecture design and hybrid cloud migrations",
-                "Network infrastructure modernization, SD-WAN deployment, and branch office transformations",
-                "Application modernization and legacy system upgrades"
+                "Technology assessments and transformation roadmaps",
+                "Cloud-native architecture and hybrid migrations",
+                "Network modernization and SD-WAN deployment",
+                "Legacy system upgrades and application modernization"
               ]} 
             />
             <ServiceCard 
-              title="Cybersecurity Compliance" 
-              desc="End-to-end compliance readiness and audit support for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP, with continuous monitoring and governance frameworks." 
+              title="Cybersecurity & GRC" 
+              desc="Comprehensive governance, risk, and compliance solutions with end-to-end security frameworks for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP readiness." 
               points={[
-                "Comprehensive gap assessments and remediation planning",
-                "Control design, documentation, and evidence collection",
-                "Continuous compliance monitoring and real-time dashboards",
-                "Risk management frameworks and security posture optimization"
+                "Gap assessments and remediation planning",
+                "Control design and evidence collection",
+                "Continuous compliance monitoring dashboards",
+                "Risk management and security posture optimization"
               ]} 
             />
             <ServiceCard 
-              title="AI Automation" 
-              desc="Intelligent automation solutions powered by AI agents, machine learning, and robotic process automation to transform workflows and enhance operational efficiency." 
+              title="Artificial Intelligence" 
+              desc="Advanced AI solutions including intelligent automation, custom model development and training, and agentic AI systems that transform business operations." 
               points={[
-                "AI-powered workflow automation and intelligent document processing",
-                "Custom chatbot and virtual assistant development",
-                "Data pipeline engineering and analytics integration",
-                "GenAI integration for customer support and knowledge management"
+                "AI-powered workflow automation and RPA",
+                "Custom model development and training",
+                "Agentic AI system design and implementation",
+                "Data pipeline engineering and ML operations"
+              ]} 
+            />
+            <ServiceCard 
+              title="Managed IT Services" 
+              desc="Comprehensive managed IT solutions with 24/7 monitoring, proactive support, and strategic technology management to keep your operations running smoothly." 
+              points={[
+                "24/7 infrastructure monitoring and support",
+                "Proactive maintenance and patch management",
+                "Help desk and end-user support services",
+                "IT asset management and vendor coordination"
               ]} 
             />
           </div>
@@ -289,12 +299,12 @@ export default function Index() {
             <div>
               <h4 className="text-white font-semibold mb-4">Services</h4>
               <ul className="space-y-3 text-slate-400 text-sm">
-                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity Compliance</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">AI Automation</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">IT Consulting & Modernization</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Cybersecurity & GRC</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Artificial Intelligence</a></li>
+                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Cloud Architecture</a></li>
                 <li><a href="#services" className="hover:text-accent transition-colors">Network Modernization</a></li>
-                <li><a href="#services" className="hover:text-accent transition-colors">Managed IT Services</a></li>
               </ul>
             </div>
 
