@@ -77,9 +77,9 @@ export default function Index() {
         <div className="mx-auto max-w-7xl">
           <h2 className="text-4xl font-bold text-white mb-4 text-center">Our Core Services</h2>
           <div className="h-1 w-24 bg-gradient-to-r from-primary to-accent mx-auto mb-12 rounded-full"></div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
-              title="IT Consulting" 
+              title="IT Consulting & Modernization" 
               desc="Strategic technology advisory and solution architecture designed to modernize infrastructure, optimize operations, and accelerate growth across cloud and on-premise environments." 
               points={[
                 "Comprehensive technology assessments and multi-year roadmaps",
@@ -89,7 +89,7 @@ export default function Index() {
               ]} 
             />
             <ServiceCard 
-              title="Cybersecurity Compliance" 
+              title="Cybersecurity & GRC" 
               desc="End-to-end compliance readiness and audit support for SOC 2, ISO 27001, HIPAA, PCI DSS, and FedRAMP, with continuous monitoring and governance frameworks." 
               points={[
                 "Comprehensive gap assessments and remediation planning",
@@ -99,13 +99,23 @@ export default function Index() {
               ]} 
             />
             <ServiceCard 
-              title="AI Automation" 
+              title="Artificial Intelligence" 
               desc="Intelligent automation solutions powered by AI agents, machine learning, and robotic process automation to transform workflows and enhance operational efficiency." 
               points={[
-                "AI-powered workflow automation and intelligent document processing",
-                "Custom chatbot and virtual assistant development",
-                "Data pipeline engineering and analytics integration",
+                "Automation and workflow optimization",
+                "Model development and training",
+                "Agentic AI systems",
                 "GenAI integration for customer support and knowledge management"
+              ]} 
+            />
+            <ServiceCard 
+              title="Managed IT Services" 
+              desc="Comprehensive managed IT solutions with proactive monitoring, maintenance, and support to ensure optimal performance and minimize downtime." 
+              points={[
+                "24/7 infrastructure monitoring and support",
+                "Proactive system maintenance and updates",
+                "Help desk and end-user support",
+                "IT asset management and optimization"
               ]} 
             />
           </div>
