@@ -1,9 +1,11 @@
+import { useState, FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import triadelogo from "@/assets/triade-logo.png";
 import techBackground from "@/assets/tech-background.jpg";
+import { useContactForm } from "@/hooks/useContactForm";
 
 export default function Index() {
   return (
@@ -194,30 +196,7 @@ export default function Index() {
       {/* Get a Quote Section */}
       <section id="quote" className="py-24 px-6">
         <div className="mx-auto max-w-7xl grid lg:grid-cols-2 gap-12">
-          <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl shadow-[var(--shadow-card)]">
-            <h2 className="text-3xl font-bold mb-6 text-white">Begin Your Digital Transformation</h2>
-            <form className="space-y-5">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <Field label="First Name" required />
-                <Field label="Last Name" required />
-                <Field label="Work Email" type="email" required />
-                <Field label="Phone Number" type="tel" required />
-                <Field label="Company Size" />
-                <Field label="Budget" />
-              </div>
-              <div>
-                <Label className="text-sm text-slate-200">How can we help?</Label>
-                <Textarea 
-                  className="mt-2 bg-card/30 border-border text-white placeholder:text-slate-400 rounded-xl" 
-                  rows={4} 
-                  placeholder="Tell us about your IT challenges or goals..." 
-                />
-              </div>
-              <Button variant="hero" size="lg" className="w-full" asChild>
-                <a href="mailto:sales@triadesys.com">Submit Request</a>
-              </Button>
-            </form>
-          </div>
+          <ContactForm />
 
           <div className="flex flex-col justify-center bg-gradient-to-br from-primary/20 to-accent/10 backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl">
             <h3 className="text-3xl font-bold mb-8 text-white">
@@ -331,13 +310,27 @@ export default function Index() {
   );
 }
 
-function Field({ label, type = "text", required = false }: { label: string; type?: string; required?: boolean }) {
+function Field({ 
+  label, 
+  type = "text", 
+  required = false,
+  value,
+  onChange
+}: { 
+  label: string; 
+  type?: string; 
+  required?: boolean;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}) {
   return (
     <div>
       <Label className="text-sm text-slate-200">{label}</Label>
       <Input 
         required={required} 
         type={type} 
+        value={value}
+        onChange={onChange}
         className="mt-2 bg-card/30 border-border text-white placeholder:text-slate-400 rounded-xl focus:ring-primary" 
       />
     </div>
@@ -357,6 +350,68 @@ function ServiceCard({ title, desc, points }: { title: string; desc: string; poi
           </li>
         ))}
       </ul>
+    </div>
+  );
+}
+
+function ContactForm() {
+  const { submitForm, isSubmitting } = useContactForm();
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    companySize: '',
+    budget: '',
+    message: ''
+  });
+
+  const handleChange = (field: string) => (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [field]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    const success = await submitForm(formData);
+    if (success) {
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        companySize: '',
+        budget: '',
+        message: ''
+      });
+    }
+  };
+
+  return (
+    <div className="bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-10 rounded-3xl shadow-[var(--shadow-card)]">
+      <h2 className="text-3xl font-bold mb-6 text-white">Begin Your Digital Transformation</h2>
+      <form className="space-y-5" onSubmit={handleSubmit}>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <Field label="First Name" required value={formData.firstName} onChange={handleChange('firstName')} />
+          <Field label="Last Name" required value={formData.lastName} onChange={handleChange('lastName')} />
+          <Field label="Work Email" type="email" required value={formData.email} onChange={handleChange('email')} />
+          <Field label="Phone Number" type="tel" required value={formData.phone} onChange={handleChange('phone')} />
+          <Field label="Company Size" value={formData.companySize} onChange={handleChange('companySize')} />
+          <Field label="Budget" value={formData.budget} onChange={handleChange('budget')} />
+        </div>
+        <div>
+          <Label className="text-sm text-slate-200">How can we help?</Label>
+          <Textarea 
+            className="mt-2 bg-card/30 border-border text-white placeholder:text-slate-400 rounded-xl" 
+            rows={4} 
+            placeholder="Tell us about your IT challenges or goals..."
+            value={formData.message}
+            onChange={handleChange('message')}
+          />
+        </div>
+        <Button variant="hero" size="lg" className="w-full" type="submit" disabled={isSubmitting}>
+          {isSubmitting ? 'Sending...' : 'Submit Request'}
+        </Button>
+      </form>
     </div>
   );
 }
