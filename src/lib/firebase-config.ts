@@ -1,5 +1,5 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp, FirebaseApp } from 'firebase/app';
+import { getFirestore, Firestore } from 'firebase/firestore';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -12,10 +12,19 @@ const firebaseConfig = {
   appId: "1:274974195910:web:4ff724d1b9bc9e818257c7"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// Initialize Firebase with error handling
+let app: FirebaseApp;
+let db: Firestore;
 
-// Initialize Firestore
-export const db = getFirestore(app);
+try {
+  app = initializeApp(firebaseConfig);
+  db = getFirestore(app);
+} catch (error) {
+  console.error('Firebase initialization error:', error);
+  // Create a minimal mock to prevent app crashes
+  app = {} as FirebaseApp;
+  db = {} as Firestore;
+}
 
+export { db };
 export default app;
