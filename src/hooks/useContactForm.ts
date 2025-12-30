@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '@/lib/firebase-config';
+import { ref, push, serverTimestamp } from 'firebase/database';
+import { database } from '@/lib/firebase-config';
 import { useToast } from '@/hooks/use-toast';
 
 interface ContactFormData {
@@ -42,7 +42,8 @@ export function useContactForm() {
     setIsSubmitting(true);
 
     try {
-      await addDoc(collection(db, 'contacts'), {
+      const contactsRef = ref(database, 'contacts');
+      await push(contactsRef, {
         ...data,
         createdAt: serverTimestamp(),
         status: 'new'
